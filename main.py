@@ -2,6 +2,9 @@
 # Step 1  : Import Dependent library
 import pandas as pd
 from datetime import datetime as dt , datetime
+import plotly
+print(plotly.__version__)
+
 import plotly.graph_objects as go
 
 "Variable defining"
@@ -20,7 +23,9 @@ mMA29 = "MA29"
 mMA100 = "MA100"
 
 """Step 2: Load CSV file into memory """
-path = ".//Data//512023+2023-01-05.csv"
+path = 'E:/Analytics Project/BankNIFTY_AlgoTraiding/BankNifty_Algo_Strategy/Data/512023+2023-01-05.csv'
+
+
 df = pd.read_csv( path )
 print(df)
 
